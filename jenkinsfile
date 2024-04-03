@@ -1,0 +1,16 @@
+@Library('testing_shared_lib@main') _
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Test Shared Library') {
+            steps {
+                script {
+                    // Call the shared library function
+                    mySharedFunction()
+                }
+            }
+        }
+    }
+}
