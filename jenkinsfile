@@ -7,7 +7,7 @@ pipeline {
         stage('Test Shared Library') {
             steps {
                 script {
-                    // Call the shared library function amish
+                    // Call the shared library function amish kohli
                     mySharedFunction()
                 }
             }
